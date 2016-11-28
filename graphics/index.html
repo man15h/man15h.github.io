@@ -1,0 +1,136 @@
+<html >
+		<head>
+				<meta charset="UTF-8">
+				<meta name="viewport" content="width=device-width, initial-scale=1">
+				<title>Manish:whoami</title>
+        <link rel="stylesheet" href="bower_components/angular-material/angular-material.css">
+				<linl href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+				<link href="https://fonts.googleapis.com/css?family=Merriweather:300,300italic" rel="stylesheet" type="text/css">
+				<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+				<link rel="stylesheet" href="bower_components/mdPickers/dist/mdPickers.min.css">
+				<link href="https://fonts.googleapis.com/css?family=Cabin|Lato|Merriweather+Sans|Montserrat|Open+Sans|PT+Sans|Poiret+One" rel="stylesheet">
+				<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Jura" rel="stylesheet">
+				<link rel="shortcut icon" type="image/png" href="favicon.ico"/>
+        <link rel="stylesheet" href="themify-icons.css">
+        <link rel="stylesheet" href="css/style.css">
+		</head>
+		<body ng-app="app" ng-controller="myCtrl" >
+      <nav class="navbar-wrap" hide-sm hide-xs >
+         <div layout="row"	class="header-row-5co container">
+           <div flex="50">
+						 <a href="#/"><img src="images/logo.svg" style="fill:#353535"height='70' width='70'/></a>
+					 </div>
+       </nav>
+       <nav class="navbar-wrap nav-fix" hide-sm hide-xs >
+          <div layout="row"	class="header-row-5co container">
+            <div flex-offset="50" flex="50" layout="row" layout-align="center center" class="nav-li-items">
+              <div class="li-item-3" ><a href="#about"target="_self" style="" du-smooth-scroll du-scrollspy >About</a></div>
+              <div class="li-item-4" ><a href="#project"target="_self"style="" du-smooth-scroll du-scrollspy >Project</a></div>
+              <div class="li-item-4" ><a href="#work"target="_self"style="" du-smooth-scroll du-scrollspy >Work</a></div>
+              <div class="li-item-5 nav-li-btn" ><a target="_self" href="#contact" style=""du-smooth-scroll du-scrollspy  >Contact</a></div>
+            </div>
+          </div>
+        </nav>
+      <div  id="about" when-visible="ElementIn" class="not-visible information-wrapper container" layout="column">
+        <div layout="row" class="inf-wrap">
+          <div class="intro" flex='50'>
+            <span>Full stack Developer</span>
+            <h2>Manish Kunwal</h2>
+            <div class="icons" layout="row" layout-align="start center">
+              <a href="https://github.com/man15h"><i class="ti-font ti-github"></i></a>
+              <a href="https://twitter.com/ManishKunwal"><i class="ti-font ti-twitter"></i></a>
+              <a href="https://plus.google.com/+manishkunwal"><i class="ti-font ti-google"></i></a>
+            </div>
+            <i class="ti-angle-down"></i>
+          </div>
+          <div class="intro" flex='50'>
+            <!-- <h2>Manish Kunwal</h2> -->
+          </div>
+        </div>
+      </div>
+      <div class="information-wrapper container" layout="column" ng-scrollbars ng-scrollbars-config="config">
+        <div id="project" layout="row" style="position:relative;">
+          <div layout="column" class="work-exp-inf" flex="50">
+            <span>Project and Interns</span>
+            <div class="recent-list"layout="column">
+              <div when-visible="ElementIn" class="not-visible recent-list-itm" layout="column">
+                <span>Email Archive System Developer</span>
+                <p>IIT Delhi Webmail</p>
+                <p style="opacity:0.75;font-size:16px;">July 2016 -Present</p>
+              </div>
+              <div when-visible="ElementIn" class="not-visible recent-list-itm" layout="column">
+                <span>Software Developer</span>
+                <p>Retake Entertainment</p>
+                <p style="opacity:0.75;font-size:16px;">Jan 2016 -Present</p>
+              </div>
+              <div when-visible="ElementIn" class="not-visible recent-list-itm" layout="column">
+                <span>Web Management Coordinatorr</span>
+                <p>Alumni Affairs And International Programs, IIT Delhi</p>
+                <p style="opacity:0.75;font-size:16px;">Apr 2016 -Present</p>
+              </div>
+              <div when-visible="ElementIn" class="not-visible recent-list-itm" layout="column">
+                <span>CFD Analysis of Multimode Heat <br>Transfer in Buildings</span>
+                <p>IIT Delhi</p>
+                <p style="opacity:0.75;font-size:16px;">July 2016 - Nov 2016</p>
+              </div>
+              <div when-visible="ElementIn" class="not-visible recent-list-itm" layout="column">
+                <span>Web Developer</span>
+                <p>Eneo Technologies</p>
+                <p style="opacity:0.75;font-size:16px;">May - Jun 2016</p>
+              </div>
+              <div when-visible="ElementIn" class="not-visible recent-list-itm" layout="column">
+                <span>Part Time Web Developer</span>
+                <p>Bevy Network</p>
+                <p style="opacity:0.75;font-size:16px;">Mar - Apr 2016</p>
+              </div>
+              <div when-visible="ElementIn" class="not-visible recent-list-itm" layout="column">
+                <span>Full stack Developer</span>
+                <p>10x Smart Technologies</p>
+                <p style="opacity:0.75;font-size:16px;">Dec 2015</p>
+              </div>
+            </div>
+          </div>
+          <div layout="row" flex='50'>
+          </div>
+        </div>
+      </div>
+      <div class="container" layout="column">
+        <div id="work" layout="row" style="position:relative;top:150px;">
+          <div layout="column" class="work-exp-inf" flex>
+            <span>Recent Work</span>
+            <div when-visible="ElementIn" class="not-visible recent-work-port" layout="row" layout-wrap>
+              <a class="retake-link" href="https://retake.in"></a>
+              <a class="bevy-link"></a>
+              <a class="radio-link" href="https://radio.iitd.ac.in"></a>
+              <a class="move-link"></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer id="contact" layout="row" style="position:relative;top:150px;">
+        <div layout="row" class="container" >
+          <div  layout="row"flex>
+            <div class="recent-list-itm" layout="column">
+              <p style="opacity:0.8;padding-bottom:20px;">Do you like My work?</p>
+              <span style="color:#fff;">Hire me for your project</span>
+            </div>
+            <div  layout="column">
+              <button class="footer-btn">Contact</button>
+            </div>
+          </div>
+        </div>
+      </footer>
+    <script src="bower_components/angular/angular.js"></script>
+		<script src="bower_components/angular-animate/angular-animate.js"></script>
+		<script src="bower_components/angular-aria/angular-aria.js"></script>
+		<script src="bower_components/angular-material/angular-material.js"></script>
+		<script src="bower_components/jquery/dist/jquery.js"></script>
+		<script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
+		<script src="bower_components/angular-carousel/dist/angular-carousel.js"></script>
+		<script src="bower_components/angular-touch/angular-touch.js"></script>
+    <script src="bower_components/angular-scroll/angular-scroll.min.js"></script>
+    <script src="bower_components/angular-scroll-animate/dist/angular-scroll-animate.js"></script>
+    <script src="js/app.js"></script>
+		</body>
+</html>
