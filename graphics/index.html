@@ -1,38 +1,35 @@
-<html >
-		<head>
-				<meta charset="UTF-8">
-				<meta name="viewport" content="width=device-width, initial-scale=1">
-				<title>Manish:whoami</title>
-        <link rel="stylesheet" href="bower_components/angular-material/angular-material.css">
-				<linl href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
-				<link href="https://fonts.googleapis.com/css?family=Merriweather:300,300italic" rel="stylesheet" type="text/css">
-				<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
-				<link rel="stylesheet" href="bower_components/mdPickers/dist/mdPickers.min.css">
-				<link href="https://fonts.googleapis.com/css?family=Cabin|Lato|Merriweather+Sans|Montserrat|Open+Sans|PT+Sans|Poiret+One" rel="stylesheet">
-				<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Jura" rel="stylesheet">
-				<link rel="shortcut icon" type="image/png" href="favicon.ico"/>
-        <link rel="stylesheet" href="themify-icons.css">
-        <link rel="stylesheet" href="css/style.css">
-		</head>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1"/>
+		<title>Manish:whoami</title>
+    <link rel="stylesheet" href="bower_components/angular-material/angular-material.css"/>
+		<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css"/>
+		<link href="https://fonts.googleapis.com/css?family=Merriweather:300,300italic" rel="stylesheet" type="text/css"/>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css"/>
+		<link rel="stylesheet" href="bower_components/mdPickers/dist/mdPickers.min.css"/>
+		<link href="https://fonts.googleapis.com/css?family=Cabin|Lato|Merriweather+Sans|Montserrat|Open+Sans|PT+Sans|Poiret+One" rel="stylesheet"/>
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css?family=Jura" rel="stylesheet"/>
+		<link rel="shortcut icon" type="image/png" href="favicon.ico"/>
+    <link rel="stylesheet" href="themify-icons.css"/>
+    <link rel="stylesheet" href="css/style.css"/>
+	</head>
 		<body ng-app="app" ng-controller="myCtrl" >
-      <nav class="navbar-wrap" hide-sm hide-xs >
-         <div layout="row"	class="header-row-5co container">
-           <div flex="50">
-						 <a href="#/"><div class="ti-nfs"></div></a>
-					 </div>
-       </nav>
-       <nav class="navbar-wrap nav-fix" hide-sm hide-xs >
+       <!-- <nav class="navbar-wrap" hide-sm hide-xs >
           <div layout="row"	class="header-row-5co container">
-            <div flex-offset="50" flex="50" layout="row" layout-align="center center" class="nav-li-items">
+						<div flex="50">
+							<a href="#/"><div class="ti-nfs"></div></a>
+						</div>
+            <div flex="50" layout="row" layout-align="center center" class="nav-li-items">
               <div class="li-item-3" ><a href="#about"target="_self" style="" du-smooth-scroll du-scrollspy >About</a></div>
               <div class="li-item-4" ><a href="#project"target="_self"style="" du-smooth-scroll du-scrollspy >Project</a></div>
               <div class="li-item-4" ><a href="#work"target="_self"style="" du-smooth-scroll du-scrollspy >Work</a></div>
               <div class="li-item-5 nav-li-btn" ><a target="_self" href="#contact" style=""du-smooth-scroll du-scrollspy  >Contact</a></div>
             </div>
           </div>
-        </nav>
-      <div  id="about" when-visible="ElementIn" class="not-visible information-wrapper container" layout="column">
+        </nav> -->
+      <div id="about" class=" header-wrapper container" layout="column">
         <div layout="row" class="inf-wrap">
           <div class="intro" flex='50'>
             <span>Coder, Web Developer and Android App Developer</span>
@@ -44,9 +41,6 @@
             </div>
             <a href="#project"target="_self" du-smooth-scroll du-scrollspy ><i class="ti-angle-down"></i></a>
           </div>
-          <div class="intro" flex='50'>
-            <!-- <h2>Manish Kunwal</h2> -->
-          </div>
         </div>
       </div>
       <div class="information-wrapper container" layout="column" ng-scrollbars ng-scrollbars-config="config">
@@ -54,7 +48,7 @@
           <div layout="column" class="work-exp-inf" flex="50">
             <span>Project and Interns</span>
             <div class="recent-list"layout="column">
-							<div when-visible="ElementIn" class="not-visible recent-list-itm" layout="column">
+							<div when-visible="ElementIn" style="margin-top:30px;"class="not-visible recent-list-itm" layout="column">
                 <span>Full System Developer</span>
                 <p>IIT Delhi on Air</p>
                 <p style="opacity:0.75;font-size:16px;">Sept 2016 - Present</p>
@@ -109,7 +103,7 @@
               <a class="bevy-link"></a>
               <a class="radio-link" href="https://radio.iitd.ac.in"></a>
               <a class="move-link"></a>
-							<a class="ownchat-link"></a>
+							<a class="ownchat-link" href="http://tinyurl.com/ownpie"></a>
             </div>
           </div>
         </div>
@@ -122,7 +116,7 @@
               <span style="color:#fff;">Hire me for your project</span>
             </div>
             <div  layout="column">
-              <button class="footer-btn">Contact</button>
+              <button class="footer-btn" href="mailto:manish9461@gmail.com?Subject=Query" target="_top">Contact</button>
             </div>
           </div>
         </div>
