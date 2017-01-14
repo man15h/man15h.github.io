@@ -25,7 +25,7 @@ body{
   width: 100%;
   margin: 0 auto;
   margin-top: 70px;
-  margin-bottom: 70px;
+  margin-bottom: 250px;
 }
 .scroll .scrolling {
     opacity: 0;
@@ -75,3 +75,56 @@ body{
     opacity: 0;
     -webkit-transform: translate3d(0%, 70%, 0);
             transform: translate3d(0%, 70%, 0); } }
+
+/*section 2 starts from here*/
+.section-2 .row{
+    padding-bottom: 200px;
+}
+.left-side-wrapper h2 {
+    color: #202020;
+    font-family: 'Open Sans', sans-serif;
+    text-align: left;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 56px;
+    margin-bottom: 5px;
+}
+.left-side-wrapper p{
+  color: #999999;
+  font-family: 'Open Sans', sans-serif;
+  text-align: left;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 30px;
+  margin-bottom: 10px;
+}
+.left-side-wrapper .divider{
+  width: 50%;
+  height: 1px;
+  background-color: #CCCCCC;
+  margin: 30px 0
+}
+.left-side-wrapper ul li {
+    margin-bottom: 5px;
+    color: #999999;
+    font-family: 'Open Sans', sans-serif;
+    text-align: left;
+    font-weight: 400;
+    font-size: 16px;
+}
+.left-side-wrapper ul li strong{
+  color: #202020;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+}
+.btn-md{
+  margin: 0;
+}
+.parallax .position-1{
+  position: absolute;
+  z-index: 3;
+}
+.parallax .position-2 ,.parallax .position-3{
+  position: absolute;
+  z-index: 2;
+}
