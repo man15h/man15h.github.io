@@ -72,7 +72,7 @@ $('body').terminal(function(cmd, term) {
     return "[[iu;#009688;]" + text + "]";
   }
   var whoami = "[[ib;#5b727f;]Hello, my name is Manish Kunwal, I'm currently studying ]"+highLight("Mechanical engneering")
-  +"in"+highLight("IIT Delhi.\n")+"[[;#5b727f;]I'm a programmer, Web-Developer (Front-end and back-end), Android app Developer and Linux system administrator. I really love Open Source and passionate to create, contribute to Open Source projects]";
+  +"in"+highLight("IIT Delhi.")+"[[;#5b727f;]I'm full stack Web-Developer, Programmer and Linux system administrator. I really love Open Source and passionate to create, contribute to Open Source projects]";
 
   if (cmd == 'help') {
       term.echo(commandText("   contact")+"          display contact infomation");
@@ -84,15 +84,15 @@ $('body').terminal(function(cmd, term) {
       term.echo(commandText("   recent")+"       display my recent projects/intern");
     }
   else if (cmd=='whoami'){
-      term.echo("[[;#5b727f;]Hello, my name is Manish Kunwal, I'm currently studying ]"+highLight("Mechanical engneering")+" in "+highLight("IIT Delhi.\n")
-      +"[[i;#5b727f;]I'm a programmer, Web-Developer (Front-end and back-end), Android app Developer and Linux system administrator. I really love Open Source and passionate to create, contribute to Open Source projects]\n"
+      term.echo("[[;#5b727f;]Hello, my name is Manish, I'm currently studying ]"+highLight("Mechanical engneering")+" in "+highLight("IIT Delhi.\n")
+      +"[[i;#5b727f;]I'm a full stack Web-Developer, Programmer and Linux system administrator. I really love Open Source and passionate to create, contribute to Open Source projects]\n"
     );
   }
   else if (cmd == 'age') {
       term.echo("[[i;#5b727f;]00010100 (Years)]");
     }
   else if (cmd == 'about') {
-      term.echo("[[i;#FF9800;] V 0.6.8\n");
+      term.echo("[[i;#FF9800;] V 0.7.1\n");
     }
   else if (cmd == 'school') {
       term.echo("[[i;#5b727f;]Jawahar Navodaya Vidalaya, Sawai Madhopur]");
@@ -128,7 +128,7 @@ $('body').terminal(function(cmd, term) {
     }
     else if (cmd == 'techskills') {
         term.echo(listHead("Skills: \n")+
-      listText("      - AngularJS, C++, CSS3, Data Structure and Algorithm, Git, HTML5, Java, JavaScript, jQuery, JSON, MySQL, NodeJS, php, Python\n")+
+      listText("      - AngularJS, C++, CSS3, Data Structure and Algorithm, Flask, Git, HTML5, Java, JavaScript, jQuery, JSON, MongoDB, MySQL, NodeJS, php, Python\n")+
       listText("      - Adobe suits, Android Studio, Ansys Fluent, Ansys, ICEM CFD, Atom, Autodesk Inventor, Creo, MATLAB, MS Office, SolidWorks"));
       }
     else if (cmd == 'graphics') {
