@@ -71,8 +71,8 @@ $('body').terminal(function(cmd, term) {
   var highLight = function(text){
     return "[[iu;#009688;]" + text + "]";
   }
-  var whoami = "[[ib;#5b727f;]Hello, my name is Manish Kunwal, I'm currently studying ]"+highLight("Mechanical engneering")
-  +"in"+highLight("IIT Delhi.")+"[[;#5b727f;]I'm full stack Web-Developer, Programmer and Linux system administrator. I really love Open Source and passionate to create, contribute to Open Source projects]";
+  var whoami = "[[ib;#5b727f;]Hello world!, my name is  ]"+highLight("Manish Kumar,")
+  +"[[;#5b727f;]A designer, developer, gamer, engineer, loser and ...I don't know. May be I'm not an expert in any particular field but I just do things.]";
 
   if (cmd == 'help') {
       term.echo(commandText("   contact")+"          display contact infomation");
@@ -81,18 +81,20 @@ $('body').terminal(function(cmd, term) {
       term.echo(commandText("   address")+"          display address infomation");
       term.echo(commandText("   about")+"            information about this page");
       term.echo(commandText("   techskills")+"       display my technical skills");
-      term.echo(commandText("   recent")+"       display my recent projects/intern");
+      term.echo(commandText("   recent")+"           display my recent projects/intern");
+      term.echo(commandText("   age")+"              display my Age");
+      term.echo(commandText("   cgpa")+"             display my cgpa");
     }
   else if (cmd=='whoami'){
-      term.echo("[[;#5b727f;]Hello, my name is Manish, I'm currently studying ]"+highLight("Mechanical engneering")+" in "+highLight("IIT Delhi.\n")
-      +"[[i;#5b727f;]I'm a full stack Web-Developer, Programmer and Linux system administrator. I really love Open Source and passionate to create, contribute to Open Source projects]\n"
+      term.echo("[[ib;#5b727f;]Hello world!, my name is \n]"+highLight("Manish Kumar \n")
+      +"[[i;#5b727f;]A designer, developer, gamer, engineer, loser and ...I don't know. May be I'm not an expert in any particular field but I just do things.]\n"
     );
   }
   else if (cmd == 'age') {
       term.echo("[[i;#5b727f;]00010100 (Years)]");
     }
   else if (cmd == 'about') {
-      term.echo("[[i;#FF9800;] V 0.7.1\n");
+      term.echo("[[i;#FF9800;] V 0.9.1\n");
     }
   else if (cmd == 'school') {
       term.echo("[[i;#5b727f;]Jawahar Navodaya Vidalaya, Sawai Madhopur]");
@@ -101,27 +103,37 @@ $('body').terminal(function(cmd, term) {
       term.echo("[[i;#5b727f;]SE-05, Girnar Hostel, IIT Delhi, Hauz khas, New Delhi, 110016]");
     }
   else if (cmd == 'cgpa') {
-      term.echo("[[i;#5b727f;]I don't want to show you]");
+      term.echo("[[i;#5b727f;]..... .-.-.- ---.. (Figure it out yourself)]");
+    }
+  else if (cmd == 'ls') {
+      term.echo("[[i;#dd4b39;]/Porn   /Rick and Morty   /Documents    /Videos   /Games    witcher3.zip]");
     }
   else if (cmd == 'ok') {
       term.echo("Thanks!");
     }
   else if (cmd=='contact'){
     term.echo(listHead("    Get in touch via: \n \n")+"[[i;#dd4b39;]     Email:]"+"          manish9461@gmail.com\n"
-    +"[[i;#55acee;]     Twitter:]"+"        @manishkunwal\n"
-    +"[[i;#dd4b39;]     Google Plus:]"+"    +Manish Kunwal\n"
-    +"[[i;#0084ff;]     Facebook:]"+"       manish.kunwal");
+    +"[[i;#55acee;]     Twitter:]"+"        @man15h_l\n"
+    +"[[i;#dd4b39;]     Google Plus:]"+"    +Manish Kumar\n"
+    +"[[i;#0084ff;]     Facebook:]"+"       man1.h");
   }
   else if (cmd == 'recent') {
       term.echo(listHead("Project: \n")+
-      list("1")+listText("  Automated Wall Painting Mechanism, Design of Machines, Dr. Harish Hirani - IIT Delhi (Jan, 2015 - May, 2015)\n")
+      list("1")+listText(" Automated Wall Painting Mechanism, Design of Machines, Dr. Harish Hirani - IIT Delhi (Jan, 2015 - May, 2015)\n")
       +list("2")+listText(" Thermal Effect on Buildings, B. Premchandran - IIT Delhi (2015-2016)\n")
-      +list("3")+listText(" CFD Analysis of Multimode Heat Transfer in Buildings, BTP, B. Premchandran - IIT Delhi (July, 2016 - Present)\n")
-      +list("4")+listText(" Archive System Development, IITD Webmail Service, Dr.Huzur Saran(HOD) CSC-IIT Delhi (July, 2016 - Present) \n \n")
+      +list("3")+listText(" CFD Analysis of Multimode Heat Transfer in Buildings, BTP, B. Premchandran - IIT Delhi (July, 2016 - Oct, 2016)\n")
+      +list("4")+listText(" Archive System Development, IITD Webmail Service, Dr.Huzur Saran(HOD) CSC-IIT Delhi (July, 2016 - Present)\n")
+      +list("5")+listText(" Full stack developer, Hexxa CSS, IIT Delhi (Open Source Project)\n")
+      +list("6")+listText(" Backend developer, Open House '17, IIT Delhi (April, 2017)\n")
+      +list("7")+listText(" Full stack developer, IITD On AIR, IIT Delhi (Oct, 2016 - Dec, 2016)\n\n")
       +listHead("Intern: \n")
       +list("1")+listText(" Front-end Developer, 10x Smart Technologies Pvt. Ltd. Mumbai (Dec, 2015 - Dec, 2015)\n")
       +list("2")+listText(" Part Time Web Developer, Bevy Network Pvt. Ltd., Gurgaon (Mar, 2016 - Apr, 2016)\n")
-      +list("3")+listText(" Website Developer, Goryd, Eneo Technologies Pvt. Ltd. (May, 2016 - Jun, 2016)\n")
+      +list("3")+listText(" Website Developer, Goryd, Eneo Technologies Pvt. Ltd. (May, 2016 - Jun, 2016)\n\n")
+      +listHead("Work: \n")
+      +list("1")+listText(" Angular & Firebase developer, Retake Entertainment, IIT Delhi (Mar, 2016 - Present)\n")
+      +list("2")+listText(" Full stack web developer/ Python developer, Psylab Pvt. Ltd., Gurgram (Mar, 2017 - Present)\n")
+      +list("3")+listText(" Engineer Analyst / Angular Developer, Infosys, Unknows (Aug 2017- Present)\n \n")
       +listHead("Activites: \n")
       +list("1")+listText(" Indus Action Organisation, Social Campaign 2014-15:")+'[[i;#F4511E;] An NGO dedicated to education of underprivileged children]\n'
       +list("2")+listText(" Professional Ethics And Social Responsibility Film-making Workshop\n"));
