@@ -128,7 +128,7 @@ $('body').terminal(function(cmd, term) {
     }
     else if (cmd == 'techskills') {
         term.echo(listHead("Skills: \n")+
-      listText("      - AngularJS, C++, CSS3, Data Structure and Algorithm, Flask, Git, HTML5, Java, JavaScript, jQuery, JSON, MongoDB, MySQL, NodeJS, php, Python\n")+
+      listText("      - AngularJS, C++, CSS3, Django, Flask, Git, HTML5, Java, JavaScript, MongoDB, MySQL, Nlp, NodeJS, php, Python\n")+
       listText("      - Adobe suits, Android Studio, Ansys Fluent, Ansys, ICEM CFD, Atom, Autodesk Inventor, Creo, MATLAB, MS Office, SolidWorks"));
       }
     else if (cmd == 'graphics') {
@@ -163,7 +163,7 @@ $('body').terminal(function(cmd, term) {
   height: 300,
   onInit: function(term) {
       // first question
-      var msg = '“Time you enjoying wasted, Was not wasted.”                            - John Lennon \n \n';
+      var msg = '“Time you wasted enjoying is not wasted time”                            - John Lennon \n \n';
       typed_message(term, msg, 40, function() {
           // typed_prompt(term, "what's your name:", 100);
       });
