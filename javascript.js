@@ -31,7 +31,7 @@ var typed_prompt = typed(function(term, message, prompt) {
 var typed_message = typed(function(term, message, prompt) {
   term.set_command('');
   term.echo(message)
-  term.set_prompt('[[;#f4c025;]manish@tilda:~] ');
+  term.set_prompt('[[;#f7efae;]man15h@tilda:~] ');
 });
 
 function progress(percent, width) {
@@ -55,24 +55,24 @@ var string;
 $('body').terminal(function(cmd, term) {
   var finish = false;
   var msg = "Wait I'm executing ajax call";
-  term.set_prompt('[[;#f4c025;]manish@tilda:~] ');
+  term.set_prompt('[[;#f7efae;]man15h@tilda:~] ');
   var commandText = function(text){
-    return "[[;#009688;]" + text + "]";
+    return "[[;#90ca9a;]" + text + "]";
   }
   var list = function(text){
     return "[[;#2196F3;]" + text + "]";
   }
   var listHead = function(text){
-    return "[[;#5b727f;]" + text + "]";
+    return "[[;#d0d4e5;]" + text + "]";
   }
   var listText = function(text){
-    return "[[i;#009688;]" + text + "]";
+    return "[[i;#90ca9a;]" + text + "]";
   }
   var highLight = function(text){
-    return "[[iu;#009688;]" + text + "]";
+    return "[[iu;#90ca9a;]" + text + "]";
   }
-  var whoami = "[[ib;#5b727f;]Hello world!, my name is  ]"+highLight("Manish Kumar,")
-  +"[[;#5b727f;]A designer, developer, gamer, engineer, loser and ...I don't know. May be I'm not an expert in any particular field but I just do things.]";
+  var whoami = "[[ib;#d0d4e5;]Hello world!, my name is  ]"+highLight("Manish Kumar,")
+  +"[[;#d0d4e5;]A designer, developer, gamer, engineer, loser and ...I don't know. May be I'm not an expert in any particular field but I just do things.]";
 
   if (cmd == 'help') {
       term.echo(commandText("   contact")+"          display contact infomation");
@@ -83,27 +83,26 @@ $('body').terminal(function(cmd, term) {
       term.echo(commandText("   techskills")+"       display my technical skills");
       term.echo(commandText("   recent")+"           display my recent projects/intern");
       term.echo(commandText("   age")+"              display my Age");
-      term.echo(commandText("   cgpa")+"             display my cgpa");
     }
   else if (cmd=='whoami'){
-      term.echo("[[ib;#5b727f;]Hello world!, my name is \n]"+highLight("Manish Kumar \n")
-      +"[[i;#5b727f;]A designer, developer, gamer, engineer, loser and ...I don't know. May be I'm not an expert in any particular field but I just do things.]\n"
+      term.echo("[[i;#d0d4e5;]Hello world!, my name is \n]"+highLight("Manish Kumar \n")
+      +"[[;#d0d4e5;]A designer, developer, gamer, engineer, loser and ...I don't know. May be I'm not an expert in any particular field but I just do things.]\n"
     );
   }
   else if (cmd == 'age') {
-      term.echo("[[i;#5b727f;]00010100 (Years)]");
+      term.echo("[[i;#d0d4e5;]00010100 (Years)]");
     }
   else if (cmd == 'about') {
       term.echo("[[i;#FF9800;] V 0.9.1\n");
     }
   else if (cmd == 'school') {
-      term.echo("[[i;#5b727f;]Jawahar Navodaya Vidalaya, Sawai Madhopur]");
+      term.echo("[[i;#d0d4e5;]Jawahar Navodaya Vidalaya, Sawai Madhopur]");
     }
   else if (cmd == 'address') {
-      term.echo("[[i;#5b727f;]SE-05, Girnar Hostel, IIT Delhi, Hauz khas, New Delhi, 110016]");
+      term.echo("[[i;#d0d4e5;]SE-05, Girnar Hostel, IIT Delhi, Hauz khas, New Delhi, 110016]");
     }
   else if (cmd == 'cgpa') {
-      term.echo("[[i;#5b727f;]..... .-.-.- ---.. (Figure it out yourself)]");
+      term.echo("[[i;#d0d4e5;]..... .-.-.- ---.. (Figure it out yourself)]");
     }
   else if (cmd == 'ls') {
       term.echo("[[i;#dd4b39;]/Porn   /Rick and Morty   /Documents    /Videos   /Games    witcher3.zip]");
@@ -113,7 +112,7 @@ $('body').terminal(function(cmd, term) {
     }
   else if (cmd=='contact'){
     term.echo(listHead("    Get in touch via: \n \n")+"[[i;#dd4b39;]     Email:]"+"          manish9461@gmail.com\n"
-    +"[[i;#55acee;]     Twitter:]"+"        @man15h_l\n"
+    +"[[i;#55acee;]     Twitter:]"+"        @man15h_\n"
     +"[[i;#dd4b39;]     Google Plus:]"+"    +Manish Kumar\n"
     +"[[i;#0084ff;]     Facebook:]"+"       man1.h");
   }
@@ -123,20 +122,20 @@ $('body').terminal(function(cmd, term) {
       +list("2")+listText(" Thermal Effect on Buildings, B. Premchandran - IIT Delhi (2015-2016)\n")
       +list("3")+listText(" CFD Analysis of Multimode Heat Transfer in Buildings, BTP, B. Premchandran - IIT Delhi (July, 2016 - Oct, 2016)\n")
       +list("4")+listText(" Archive System Development, IITD Webmail Service, Dr.Huzur Saran(HOD) CSC-IIT Delhi (July, 2016 - Present)\n")
-      +list("5")+listText(" Full stack developer, Hexxa CSS, IIT Delhi (Open Source Project)\n")
+      +list("5")+listText(" Full stack developer, IITD On AIR, IIT Delhi (Oct, 2016 - Dec, 2016)\n\n")
       +list("6")+listText(" Backend developer, Open House '17, IIT Delhi (April, 2017)\n")
-      +list("7")+listText(" Full stack developer, IITD On AIR, IIT Delhi (Oct, 2016 - Dec, 2016)\n\n")
+      +list("7")+listText(" Full stack developer, NSS IIT Delhi '17, IIT Delhi (May, 2017- Present)\n")
       +listHead("Intern: \n")
       +list("1")+listText(" Front-end Developer, 10x Smart Technologies Pvt. Ltd. Mumbai (Dec, 2015 - Dec, 2015)\n")
-      +list("2")+listText(" Part Time Web Developer, Bevy Network Pvt. Ltd., Gurgaon (Mar, 2016 - Apr, 2016)\n")
-      +list("3")+listText(" Website Developer, Goryd, Eneo Technologies Pvt. Ltd. (May, 2016 - Jun, 2016)\n\n")
+      +list("2")+listText(" Web Developer, Bevy Network Pvt. Ltd., Gurgaon (Mar, 2016 - Apr, 2016)\n")
+      +list("3")+listText(" Web Developer, Goryd, Eneo Technologies Pvt. Ltd. (May, 2016 - Jun, 2016)\n\n")
       +listHead("Work: \n")
       +list("1")+listText(" Angular & Firebase developer, Retake Entertainment, IIT Delhi (Mar, 2016 - Present)\n")
-      +list("2")+listText(" Full stack web developer/ Python developer, Psylab Pvt. Ltd., Gurgram (Mar, 2017 - Present)\n")
-      +list("3")+listText(" Engineer Analyst / Angular Developer, Infosys, Unknows (Aug 2017- Present)\n \n")
-      +listHead("Activites: \n")
-      +list("1")+listText(" Indus Action Organisation, Social Campaign 2014-15:")+'[[i;#F4511E;] An NGO dedicated to education of underprivileged children]\n'
-      +list("2")+listText(" Professional Ethics And Social Responsibility Film-making Workshop\n"));
+      +list("2")+listText(" Software Engineer, Psylab Pvt. Ltd., Gurgaon (Mar, 2017 - Present)\n")
+      +list("3")+listText(" Engineer Analyst / Angular Developer, Infosys Ltd.  (Aug 2017- Present)\n \n"));
+      // +listHead("Activites: \n")
+      // +list("1")+listText(" Indus Action Organisation, Social Campaign 2014-15:")+'[[i;#F4511E;] An NGO dedicated to education of underprivileged children]\n'
+      // +list("2")+listText(" Professional Ethics And Social Responsibility Film-making Workshop\n"));
     }
     else if (cmd == 'techskills') {
         term.echo(listHead("Skills: \n")+
